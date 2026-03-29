@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor & Tradición - Restaurante</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          <i class="bi bi-cup-hot-fill"></i> Papa
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservas">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Sabor & Tradición</h1>
+            <p class="lead">
+              Descubre la auténtica experiencia gastronómica en el corazón de la
+              ciudad
+            </p>
+            <div class="hero-buttons">
+              <a
+                href="https://wa.me/5491112345678?text=Hola!%20Quisiera%20hacer%20una%20reserva"
+                target="_blank"
+                class="btn-whatsapp me-3"
+              >
+                <i class="bi bi-whatsapp"></i> Reservar por WhatsApp
+              </a>
+              <a href="#menu" class="btn-menu">Ver Menú Completo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="position-absolute bottom-0 start-50 translate-middle-x mb-5 animate-float"
+      >
+        <a href="#presentacion" class="text-white">
+          <i class="bi bi-chevron-down" style="font-size: 2.5rem"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Presentación -->
+    <section
+      id="presentacion"
+      class="py-5"
+      style="background: linear-gradient(to bottom, #fff, #f9fafb)"
+    >
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0 scroll-animate scroll-animate-left">
+            <span class="text-warning text-uppercase fw-bold small"
+              >Desde 1985</span
+            >
+            <h2 class="display-4 my-4">Nuestra Historia</h2>
+            <p class="text-muted fs-5 mb-4">
+              Desde 1985, <strong>Sabor & Tradición</strong> ha sido el lugar de
+              encuentro favorito para los amantes de la buena comida. Nuestro
+              compromiso es ofrecer una experiencia gastronómica única,
+              combinando recetas tradicionales con técnicas culinarias modernas.
+            </p>
+            <p class="text-muted fs-5 mb-4">
+              Utilizamos ingredientes frescos de la mejor calidad, seleccionados
+              cuidadosamente por nuestros chefs para garantizar el sabor
+              auténtico en cada plato que servimos con pasión.
+            </p>
+            <div class="row mt-5">
+              <div class="col-4">
+                <div class="stats-card">
+                  <h3>38+</h3>
+                  <p class="text-muted mb-0">Años</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stats-card">
+                  <h3>150+</h3>
+                  <p class="text-muted mb-0">Platos</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stats-card">
+                  <h3>50K+</h3>
+                  <p class="text-muted mb-0">Clientes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 scroll-animate scroll-animate-right">
+            <div class="row g-3">
+              <div class="col-6">
+                <img
+                  src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop"
+                  alt="Interior"
+                  class="img-fluid rounded-4 shadow-lg"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop"
+                  alt="Chef"
+                  class="img-fluid rounded-4 shadow-lg mt-5"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=400&h=300&fit=crop"
+                  alt="Plato"
+                  class="img-fluid rounded-4 shadow-lg"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=300&fit=crop"
+                  alt="Bar"
+                  class="img-fluid rounded-4 shadow-lg mt-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platillos -->
+    <section id="menu" class="py-5 bg-dark text-white">
+      <div class="container my-5">
+        <div class="text-center mb-5 scroll-animate">
+          <span class="text-warning text-uppercase fw-bold small"
+            >Lo Más Pedido</span
+          >
+          <h2 class="display-4 my-4">Nuestros Favoritos</h2>
+          <p class="text-muted fs-5">
+            Descubre los platos más populares que han conquistado el paladar de
+            miles de clientes
+          </p>
+        </div>
+        <div class="row mb-4 g-4">
+          <div
+            class="col-lg-4 col-md-6 scroll-animate scroll-animate-scale delay-100"
+          >
+            <div class="platillo-card">
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&h=300&fit=crop"
+                  alt="Paella"
+                />
+                <span class="badge-rating">
+                  <i class="bi bi-star-fill"></i> 4.8
+                </span>
+              </div>
+              <div class="card-body px-3 pb-3 pt-3">
+                <h5 class="text-dark mb-3">Paella de Mariscos</h5>
+                <p class="text-muted">
+                  Arroz con mariscos frescos, azafrán y vegetales mediterráneos
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-4 fw-bold text-warning">$28.990</span>
+                  <button
+                    class="btn btn-warning rounded-pill px-4"
+                    id="btn-ordenar"
+                  >
+                    Ordenar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 scroll-animate scroll-animate-scale delay-200"
+          >
+            <div class="platillo-card">
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+                  alt="Bistec"
+                />
+                <span class="badge-rating">
+                  <i class="bi bi-star-fill"></i> 4.9
+                </span>
+              </div>
+              <div class="card-body px-3 pb-3 pt-3">
+                <h5 class="text-dark mb-3">Bistec a la Parrilla</h5>
+                <p class="text-muted">
+                  Corte premium argentino con guarnición de papas y vegetales
+                  asados
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-4 fw-bold text-warning">$32.990</span>
+                  <button
+                    class="btn btn-warning rounded-pill px-4"
+                    id="btn-ordenar"
+                  >
+                    Ordenar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 scroll-animate scroll-animate-scale delay-300"
+          >
+            <div class="platillo-card">
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&h=300&fit=crop"
+                  alt="Pasta"
+                />
+                <span class="badge-rating">
+                  <i class="bi bi-star-fill"></i> 4.7
+                </span>
+              </div>
+              <div class="card-body px-3 pb-3 pt-3">
+                <h5 class="text-dark mb-3">Pasta Carbonara</h5>
+                <p class="text-muted">
+                  Pasta italiana artesanal con tocino, huevo y queso parmesano
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-4 fw-bold text-warning">$18.200</span>
+                  <button
+                    class="btn btn-warning rounded-pill px-4"
+                    id="btn-ordenar"
+                  >
+                    Ordenar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 scroll-animate scroll-animate-scale delay-400"
+          >
+            <div class="platillo-card">
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&h=300&fit=crop"
+                  alt="Salmón"
+                />
+                <span class="badge-rating">
+                  <i class="bi bi-star-fill"></i> 4.8
+                </span>
+              </div>
+              <div class="card-body px-3 pb-3 pt-3">
+                <h5 class="text-dark mb-3">Salmón Teriyaki</h5>
+                <p class="text-muted">
+                  Filete de salmón fresco con salsa teriyaki casera y arroz
+                  basmati
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-4 fw-bold text-warning">$26.990</span>
+                  <button
+                    class="btn btn-warning rounded-pill px-4"
+                    id="btn-ordenar"
+                  >
+                    Ordenar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 scroll-animate scroll-animate-scale delay-500"
+          >
+            <div class="platillo-card">
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&h=300&fit=crop"
+                  alt="Lasagna"
+                />
+                <span class="badge-rating">
+                  <i class="bi bi-star-fill"></i> 4.6
+                </span>
+              </div>
+              <div class="card-body px-3 pb-3 pt-3">
+                <h5 class="text-dark mb-3">Lasagna Bolognesa</h5>
+                <p class="text-muted">
+                  Capas de pasta con salsa bolognesa tradicional y bechamel
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-4 fw-bold text-warning">$22.990</span>
+                  <button
+                    class="btn btn-warning rounded-pill px-4"
+                    id="btn-ordenar"
+                  >
+                    Ordenar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 scroll-animate scroll-animate-scale delay-600"
+          >
+            <div class="platillo-card">
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop"
+                  alt="Tacos"
+                />
+                <span class="badge-rating">
+                  <i class="bi bi-star-fill"></i> 4.9
+                </span>
+              </div>
+              <div class="card-body px-3 pb-3 pt-3">
+                <h5 class="text-dark mb-3">Tacos al Pastor</h5>
+                <p class="text-muted">
+                  Tacos mexicanos con cerdo marinado, piña y salsa verde
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-4 fw-bold text-warning">$16.990</span>
+                  <button
+                    class="btn btn-warning rounded-pill px-4"
+                    id="btn-ordenar"
+                  >
+                    Ordenar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram-section">
+      <div class="container">
+        <div class="text-center mb-5 scroll-animate">
+          <i class="bi bi-instagram" style="font-size: 4rem"></i>
+          <h2 class="display-4 my-4">Síguenos en Instagram</h2>
+          <p class="fs-5 mb-4">
+            Descubre nuestras últimas creaciones culinarias, eventos especiales
+            y promociones exclusivas
+          </p>
+          <a
+            href="https://www.instagram.com/sabor_tradicion"
+            target="_blank"
+            class="btn btn-light btn-lg rounded-pill px-5"
+          >
+            <i class="bi bi-instagram"></i> @sabor_tradicion
+          </a>
+        </div>
+        <div class="row instagram-grid mt-5 scroll-animate">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=300&fit=crop"
+              alt="Instagram 1"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=300&h=300&fit=crop"
+              alt="Instagram 2"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=300&h=300&fit=crop"
+              alt="Instagram 3"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=300&fit=crop"
+              alt="Instagram 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservas -->
+    <section id="reservas" class="py-4 bg-white">
+      <div class="container pt-2 my-5">
+        <div class="text-center mb-5 scroll-animate">
+          <span class="text-warning text-uppercase fw-bold small"
+            >Reservaciones</span
+          >
+          <h2 class="display-6 my-4">Reserva tu Mesa</h2>
+          <p class="text-muted fs-5">
+            Completa los datos para asegurar tu lugar
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 scroll-animate">
+            <form
+              id="reservaForm"
+              class="p-4 rounded-4 shadow-lg"
+              style="
+                background: linear-gradient(to bottom right, #f9fafb, #f3f4f6);
+              "
+            >
+              <div class="row g-3 mb-3">
+                <div class="col-md-4">
+                  <label for="nombre" class="form-label small"
+                    >Nombre completo *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-sm"
+                    id="nombre"
+                    required
+                    placeholder="Juan Pérez"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="email" class="form-label small">Email *</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-sm"
+                    id="email"
+                    required
+                    placeholder="juan@ejemplo.com"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="telefono" class="form-label small"
+                    >Teléfono *</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control form-control-sm"
+                    id="telefono"
+                    required
+                    placeholder="+54 9 11..."
+                  />
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-4">
+                  <label for="personas" class="form-label small"
+                    >Personas *</label
+                  >
+                  <select class="form-select" id="personas" required>
+                    <option value="1">1 persona</option>
+                    <option value="2" selected>2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                    <option value="7">7 personas</option>
+                    <option value="8">8 personas</option>
+                    <option value="9">9 personas</option>
+                    <option value="10">10 personas</option>
+                    <option value="15">15 personas</option>
+                    <option value="20">20 personas</option>
+                    <option value="25">25 personas</option>
+                    <option value="30">30 personas</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="fecha" class="form-label small">Fecha *</label>
+                  <input
+                    type="date"
+                    class="form-control form-control-sm"
+                    id="fecha"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="hora" class="form-label small">Hora *</label>
+                  <input
+                    type="time"
+                    class="form-control form-control-sm"
+                    id="hora"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row g-3 align-items-end">
+                <div class="col-md-8">
+                  <label for="mensaje" class="form-label small"
+                    >Mensaje (opcional)</label
+                  >
+                  <textarea
+                    class="form-control form-control-sm"
+                    id="mensaje"
+                    rows="1"
+                    placeholder="Alergias o notas..."
+                  ></textarea>
+                </div>
+                <div class="col-md-4">
+                  <button type="submit" class="btn-submit py-2">
+                    Confirmar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section
+      id="contacto"
+      class="py-4"
+      style="background: linear-gradient(to bottom, #f9fafb, #fff)"
+    >
+      <div class="container my-4">
+        <div class="text-center mb-5 scroll-animate">
+          <span class="text-warning text-uppercase fw-bold small"
+            >Ubicación</span
+          >
+          <h2 class="display-4 my-4">Encuéntranos</h2>
+          <p class="text-muted fs-5">
+            Visítanos y vive una experiencia gastronómica inolvidable
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 mb-4 mb-lg-0 scroll-animate scroll-animate-left">
+            <div
+              class="bg-white rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between"
+            >
+              <h4 class="mb-3">Información de Contacto</h4>
+
+              <div class="contact-info-card mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-geo-alt-fill me-3 fs-5"></i>
+                  <div>
+                    <h6 class="fw-bold mb-0">Dirección</h6>
+                    <small class="text-muted">Av. Principal 1234, Centro</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-info-card mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                  <div>
+                    <h6 class="fw-bold mb-0">Teléfono</h6>
+                    <a
+                      href="tel:+5491112345678"
+                      class="text-muted text-decoration-none small"
+                      >+54 9 11 1234-5678</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-info-card mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-envelope-fill me-3 fs-5"></i>
+                  <div>
+                    <h6 class="fw-bold mb-0">Email</h6>
+                    <a
+                      href="mailto:info@sabortradicion.com"
+                      class="text-muted text-decoration-none small"
+                      >info@sabortradicion.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-info-card mb-3">
+                <div class="d-flex align-items-start">
+                  <i class="bi bi-clock-fill me-3 fs-5"></i>
+                  <div class="small">
+                    <h6 class="fw-bold mb-1">Horarios</h6>
+                    <span class="text-muted"
+                      >Lun-Vie: 12:00-23:00 | Sáb: 12:00-01:00</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-3 border-top">
+                <h6 class="mb-3 small fw-bold">Síguenos</h6>
+                <div class="d-flex gap-2">
+                  <a href="#" class="social-icon social-instagram text-white"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="social-icon social-whatsapp text-white"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 scroll-animate scroll-animate-right">
+            <div class="map-container h-100">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016890104532!2d-58.3815591846716!3d-34.60373446497428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08eb5e2df!2sObelisco!5e0!3m2!1ses!2sar!4v1616161616161!5m2!1ses!2sar"
+                style="border: 0; width: 100%; height: 100%; min-height: 400px"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+  <div class="container">
+    <div class="row justify-content-center gx-lg-5 mb-4">
+      
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <h5><i class="bi bi-cup-hot-fill"></i> Sabor & Tradición</h5>
+        <p>
+          Experiencia gastronómica única desde 1985. Sabor auténtico,
+          servicio excepcional y momentos inolvidables.
+        </p>
+        <div class="mt-4">
+          <a href="#" class="social-icon social-instagram text-decoration-none">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="social-icon social-whatsapp text-decoration-none">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5>Enlaces</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#inicio">Inicio</a></li>
+          <li class="mb-2"><a href="#menu">Menú</a></li>
+          <li class="mb-2"><a href="#reservas">Reservas</a></li>
+          <li class="mb-2"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Av. Principal 1234</li>
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i> +54 9 11 1234-5678</li>
+          <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@sabortradicion.com</li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <hr class="footer-divider" />
+    
+    <div class="footer-bottom text-center opacity-50">
+      <p>2026 | Desarrollado por
+        <a href="https://wa.me/543465654148" target="_blank" rel="noopener noreferrer" id="link-footer">Damian Coria</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/5491112345678?text=Hola!%20Quisiera%20más%20información"
+      target="_blank"
+      class="whatsapp-float animate-float"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript para Animaciones de Scroll -->
+    <script>
+      // Intersection Observer para animaciones al scrollear
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, observerOptions);
+
+      // Observar todos los elementos con clase scroll-animate
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(
+          ".scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale",
+        );
+        elements.forEach((el) => observer.observe(el));
+      });
+
+      // Smooth scroll para los links del navbar
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Manejo del formulario de reservas
+      document
+        .getElementById("reservaForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("¡Reserva enviada con éxito! Te contactaremos pronto.");
+          this.reset();
+        });
+
+      // Establecer fecha mínima en el input de fecha (hoy)
+      const today = new Date().toISOString().split("T")[0];
+      document.getElementById("fecha").setAttribute("min", today);
+    </script>
+  </body>
+</html>
